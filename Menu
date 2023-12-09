@@ -1,0 +1,28 @@
+<!--menu page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Web.css">
+    <script src="WE.js" async></script> 
+    <title>Eden's Bistro</title>
+<body>
+
+    <nav class="navbar"> <!--Navigation bar for questions-->
+        <div class="navbar__container"> 
+        <ul class="navbar__1"> <!--Creates the Page1 button-->
+            <li class="navbar__item"> <!--Creates the Home button-->
+                <a href="/Final.html" class="navbar__links">Home</a> <!--Creates the Main page button-->
+            </li>
+            <li class="navbar__question2"><!--Creates the Page2 button-->
+                <a href="/menu.html" class="navbar__links">Menu</a> <!--Creates the menu button-->
+            </li>
+            <li class="navbar__question3">
+                <a href="/page3.html" class= "navbar_links">Page3</a> <!-- Creates the Page3 button-->
+            </li>
+        </div>
+    </nav> 
+</div>
+</div>
