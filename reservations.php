@@ -19,7 +19,7 @@
                 <a href="/menu.html" class="navbar__links">Menu</a> <!--Creates the menu button-->
             </li>
             <li class="navbar__item">
-                <a href="/events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
+                <a href="/Events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
             </li>
             <li class = "navbar__item">
                 <a href="/reservations.php" class="navbar_links">Reservations</a> <!-- Creates the Reservations button-->
@@ -29,9 +29,8 @@
 
     <!--Events Section-->
     <div class="events">
-        <h1>Upcoming Events at Eden's Bistro</h1>
+        <h1>Reservations</h1>
         <div class="events">
-            <h1>Upcoming Events at Eden's Bistro</h1> 
             <?php
             // Database credentials
             $dbhost = 'bpetcaugh35054.ipagemysql.com';
@@ -48,7 +47,7 @@
             }
     
             
-            $sql = "SELECT * FROM events";
+            $sql = "SELECT * FROM reservations";
     
             
             $result = $conn->query($sql);
