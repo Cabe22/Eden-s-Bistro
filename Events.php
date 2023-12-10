@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="GE.js" async></script> 
-    <link rel="stylesheet" href="Web.css">
+    <!-- <link rel="stylesheet" href="Web.css">-->
     <title>Eden's Bistro - Events</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
                 <a href="/menu.html" class="navbar__links">Menu</a> <!--Creates the menu button-->
             </li>
             <li class="navbar__item">
-                <a href="/events.html" class= "navbar_links">Events</a> <!-- Creates the Events button-->
+                <a href="/events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
             </li>
         </div>
     </nav> 
@@ -28,7 +28,7 @@
     <div class="events">
         <h1>Upcoming Events at Eden's Bistro</h1>
         <div class="events">
-            <h1>Upcoming Events at Eden's Bistro</h1>
+            <h1>Upcoming Events at Eden's Bistro</h1> 
             <?php
             // Database credentials
             $dbhost = 'bpetcaugh35054.ipagemysql.com';
