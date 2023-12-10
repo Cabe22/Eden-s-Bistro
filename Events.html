@@ -27,7 +27,45 @@
     <!--Events Section-->
     <div class="events">
         <h1>Upcoming Events at Eden's Bistro</h1>
-        <!-- More HTML code here to display your events -->
+        <div class="events">
+            <h1>Upcoming Events at Eden's Bistro</h1>
+            <?php
+            // Database credentials
+            $dbhost = 'bpetcaugh35054.ipagemysql.com';
+            $dbname = 'bwilliams_db';
+            $dbuser = 'bwilliams';
+            $dbpassword = '9231773t25Ghj!';
+    
+            //  connection
+            $conn = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
+    
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+    
+            
+            $sql = "SELECT * FROM events";
+    
+            
+            $result = $conn->query($sql);
+    
+            
+            if ($result->num_rows > 0) {
+                // Output data for each row
+                while($row = $result->fetch_assoc()) {
+                    echo "<h2>" . $row["Date"]. "</h2>";
+                    echo "<p>" . $row["Event"]. "</p>";
+                }
+            } else {
+                echo "No upcoming events";
+            }
+    
+            // Close the connection
+            $conn->close();
+            ?>
+        </div>
+        
     </div>
 
     <!--Footer section-->
