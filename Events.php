@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="GE.js" async></script> 
-    <!-- <link rel="stylesheet" href="Web.css">-->
+    <link rel="stylesheet" href="Web.css">
     <title>Eden's Bistro - Events</title>
 </head>
 <body>
