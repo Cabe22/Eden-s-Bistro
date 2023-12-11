@@ -5,7 +5,11 @@
     font-family: 'Times New Roman', sans-serif; /* creates the font for the text*/
 }
 
-.navbar {   
+body{
+    text-align: center;
+}
+
+.navbar {
     background: white;
     height: 80px;
     display: flex;
@@ -16,6 +20,7 @@
     top: 0;
     z-index: 999;
 } 
+
 .navbar__container{
     display: flex; /*moves the text to the side*/
     justify-content: space-between;
@@ -51,6 +56,7 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 #footer__logo_{
     color: white;
