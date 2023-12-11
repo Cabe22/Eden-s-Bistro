@@ -1,0 +1,57 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+}
+
+.navbar__item {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar__item:hover {
+    background-color: #111;
+}
+
+/* Events section styling */
+.events {
+    padding: 20px;
+    background-color: white;
+}
+
+.events h1 {
+    color: #333;
+}
+
+.events h2 {
+    color: #666;
+}
+
+/* Footer section styling */
+.footer__container {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer__links {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__links:hover {
+    color: #ddd;
+}
