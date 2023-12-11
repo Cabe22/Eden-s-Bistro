@@ -13,16 +13,16 @@
         <div class="navbar__container"> 
         <ul class="navbar__1"> 
             <li class="navbar__item"> 
-                <a href="/Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
+                <a href="Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
             </li>
             <li class="navbar__item">
-                <a href="/menu.html" class="navbar__links">Menu</a> <!--Creates the menu button-->
+                <a href="Menu.html" class="navbar__links">Menu</a> <!--Creates the menu button-->
             </li>
             <li class="navbar__item">
-                <a href="/events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
+                <a href="Events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
             </li>
             <li class = "navbar__item">
-                <a href="/reservations.php" class="navbar_links">Reservations</a> <!-- Creates the Reservations button-->
+                <a href="Reservations.php" class="navbar_links">Reservations</a> <!-- Creates the Reservations button-->
             </li>
         </div>
     </nav> 

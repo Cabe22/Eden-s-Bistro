@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="GE.js" async></script> 
-    <!-- <link rel="stylesheet" href="Web.css">-->
+    <link rel="stylesheet" href="Web.css">
     <title>Eden's Bistro - Events</title>
 </head>
 <body>
@@ -13,16 +13,16 @@
         <div class="navbar__container"> 
         <ul class="navbar__1"> 
             <li class="navbar__item"> 
-                <a href="/Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
+                <a href="Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
             </li>
             <li class="navbar__item">
-                <a href="/menu.html" class="navbar__links">Menu</a> <!--Creates the menu button-->
+                <a href="Menu.html" class="navbar__links">Menu</a> <!--Creates the menu button-->
             </li>
             <li class="navbar__item">
-                <a href="/Events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
+                <a href="Events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
             </li>
             <li class = "navbar__item">
-                <a href="/reservations.php" class="navbar_links">Reservations</a> <!-- Creates the Reservations button-->
+                <a href="Reservations.php" class="navbar_links">Reservations</a> <!-- Creates the Reservations button-->
             </li>
         </div>
     </nav> 
@@ -30,6 +30,7 @@
     <!--Events Section-->
     <div class="events">
         <h1>Reservations</h1>
+        <h4>Here is a selection of reservable spaces we offer in our restaurant. If you would like to reserve or space or inquire about reserving, please call or email us!</h4>
         <div class="events">
             <?php
             // Database credentials
@@ -57,7 +58,7 @@
                 // Output data for each row
                 while($row = $result->fetch_assoc()) {
                     echo "<h2>" . $row["reservationName"]. "</h2>";
-                    echo "<p>Seats:" . $row["availableSeats"]. "</p>";
+                    echo "<p>Seats: " . $row["availableSeats"]. "</p>";
                 }
             } else {
                 echo "No reservations available";
