@@ -56,11 +56,11 @@
             if ($result->num_rows > 0) {
                 // Output data for each row
                 while($row = $result->fetch_assoc()) {
-                    echo "<h2>" . $row["Date"]. "</h2>";
-                    echo "<p>" . $row["Event"]. "</p>";
+                    echo "<h2>" . $row["reservationName"]. "</h2>";
+                    echo "<p>Seats:" . $row["availableSeats"]. "</p>";
                 }
             } else {
-                echo "No upcoming events";
+                echo "No reservations available";
             }
     
             // Close the connection
