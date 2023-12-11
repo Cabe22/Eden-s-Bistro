@@ -11,11 +11,11 @@
 <body>
     <nav class="navbar"> <!--Navigation bar-->
         <div class="navbar__container"> 
-        <ul class="navbar__1"> <!--Creates the Page button-->
-            <li class="navbar__item"> <!--Creates the Home button-->
-                <a href="/Home.html" class="navbar__links">Home</a> <!--Creates the Main page button-->
+        <ul class="navbar__1"> 
+            <li class="navbar__item"> 
+                <a href="/Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
             </li>
-            <li class="navbar__item"><!--Creates the Menu button-->
+            <li class="navbar__item">
                 <a href="/menu.html" class="navbar__links">Menu</a> <!--Creates the menu button-->
             </li>
             <li class="navbar__item">
@@ -34,6 +34,10 @@
             <h1>Upcoming Events at Eden's Bistro</h1> 
             <?php
             // Database credentials
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
+            error_reporting(E_ALL);
+            
             $dbhost = 'bpetcaugh35054.ipagemysql.com';
             $dbname = 'bwilliams_db';
             $dbuser = 'bwilliams';
