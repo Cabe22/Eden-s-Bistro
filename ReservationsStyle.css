@@ -10,29 +10,32 @@ body{
 }
 
 h1 {
-    padding: 20px;
+    padding-top: 20px;
     color: green;
     align-items: center;
-    cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
 }
 
-h2 {
-    padding: 10px;
+h2,h3 {
+    padding-top: 20px;
     color: green;
     align-items: center;
-    cursor: pointer;
     text-decoration: none;
 }
 
 h4{
     font-size: 18px;
+    padding-top: 10px;
+}
+p{
+    padding-top: 5px;
 }
 
 .wrapper{
-    margin: 0px;
     padding: 30px 50px;
+    min-height: 100vh;
+
 }
 
 .navbar {
@@ -128,4 +131,23 @@ nav li {
 .reservation{
     padding: 40px 0;
     margin: 20px;
+}
+
+// Login Styles
+form{
+    width: 50%;
+}
+.form__container{
+    display: grid;
+    place-items: center;
+}
+button{
+    padding: 0px;
+    line-height: 25px;
+}
+input, button{
+    display: grid;
+    height: 30px;
+    margin: 20px 0;
+    width: 100%;
 }

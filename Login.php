@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="GE.js" async></script> 
-    <link rel="stylesheet" href="Web.css">
+    <link rel="stylesheet" href="ReservationsStyle.css">
     <title>Eden's Bistro - Events</title>
 </head>
 <body>
@@ -31,17 +31,24 @@
     </nav>
 
     <!--Events Section-->
-    <div class="events">
-        <h1>Reservations</h1>
-        <h4>Here is a selection of reservable spaces we offer in our restaurant. If you would like to reserve or space or inquire about reserving, please call or email us!</h4>
-        <div class="events">
+    <div class="reservation wrapper">
+        <h1>Employee Log In</h1>
+        <h4>Please enter your username and password</h4>
+        <div>
+            <div class="form__container">
+                <form action="employees.php" method="post">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="password" placeholder="Password">
+                    <button type="submit" name="submit">Log In</button>
+                </form>
+            </div>
             <?php
             // Database credentials
             $dbhost = 'bpetcaugh35054.ipagemysql.com';
             $dbname = 'bwilliams_db';
             $dbuser = 'bwilliams';
             $dbpassword = '9231773t25Ghj!';
-    
+
             //  connection
             $conn = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
     
@@ -50,36 +57,20 @@
                 die("Connection failed: " . $conn->connect_error);
             }
     
-            
-            $sql = "SELECT * FROM reservations";
-    
-            
-            $result = $conn->query($sql);
-    
-            
-            if ($result->num_rows > 0) {
-                // Output data for each row
-                while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
-                    echo "<h2>" . $row["reservationName"]. "</h2>";
-                    echo "<p>Seats: " . $row["availableSeats"]. "</p>";
-                }
-            } else {
-                echo "No reservations available";
-            }
-    
             // Close the connection
             $conn->close();
             ?>
         </div>
-        
     </div>
+</body>
 
-    <!--Footer section-->
-    <div class="footer__container">
+<footer>
+   <!--Footer section-->
+   <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items"> <!-- Bottom of the page-->
-                    <h2>Contact Us</h2>
+                    <h2 class="footer__text">Contact Us</h2>
                     <a href="/">1-800-212-1354</a>
                     <a href="/">EdensBistro@gmail.com</a>
                 </div>
@@ -88,12 +79,12 @@
                         <div class="footer__logo">
                             <a href="/" id ="footer__logo"><i class="GOOD EATS"></i></a>
                         </div>
-                        <p class="website__rights">Eden's Bistro 2023. All rights reserved</p>
+                        <p class="footer__text">Eden's Bistro 2023. All rights reserved</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
+</footer>
 </html>
 

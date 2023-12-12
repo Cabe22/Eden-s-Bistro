@@ -123,3 +123,35 @@ body {
   .website__rights {
     font-size: 14px;
   }
+
+  
+.wrapper{
+  padding: 30px 50px;
+  min-height: 100vh;
+
+}
+
+// Reservation Styles
+.reservation{
+  padding: 40px 0;
+  margin: 20px;
+}
+
+// Login Styles
+form{
+  width: 50%;
+}
+.form__container{
+  display: grid;
+  place-items: center;
+}
+button{
+  padding: 0px;
+  line-height: 25px;
+}
+input, button{
+  display: grid;
+  height: 30px;
+  margin: 20px 0;
+  width: 100%;
+}
