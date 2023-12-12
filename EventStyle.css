@@ -3,21 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-}
-
-p{
-  padding-top: 5px;
-}
-
-h4{
-  font-size: 18px;
-  padding-top: 10px;
-}
-
-.wrapper{
-  padding: 30px 50px;
-  min-height: 100vh;
+  background-color: #e7e7e7;
+  line-height: 1.6;
 }
 
 /* Navigation bar styling */
@@ -25,7 +12,8 @@ h4{
   background-color: #22B14C;
   color: white;
   overflow: hidden;
-  position: sticky;
+  font-size: 18px;
+  padding: 20px 0;
 }
 
 #navbarTitle {
@@ -41,7 +29,7 @@ h4{
 .navbar__container {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0 40px;
 }
 
 #navbarImage {
@@ -50,6 +38,7 @@ h4{
   right: 10px;
   height: 50px; 
   width: 50px; 
+  
 }
 
 .navbar__1 {
@@ -66,6 +55,7 @@ h4{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .navbar__links, .navbar_links {
@@ -73,32 +63,43 @@ h4{
   text-decoration: none;
 }
 
-.navbar__item:hover {
-  background-color: #111;
+.navbar__item:hover{
+  background-color: #e0e0e0;
 }
 
 /* Events section styling */
 .events {
   text-align: center;
-  margin-top: 50px;
-  background-color: white;
+  margin: 50px auto; 
+  background-color: #ffffff;
+  max-width: 800px; 
+  padding: 20px; 
 }
 
 .events h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #22B14C;
 }
 
 .events h2 {
-  font-size: 18px;
+  font-size: 23px;
   margin-bottom: 10px;
-  color: #666;
+  color: #22B14C;
+  font-weight: 600; 
+}
+
+.events h3 {
+  font-size: 23px;
+  color: #22B14C;
+  font-weight: 600; 
+  margin-bottom: 10px;
 }
 
 .events p {
-  font-size: 14px;
-  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+  margin-bottom: 10px;
+  font-size: 17px;
 }
 
 /* Footer section styling */
@@ -154,6 +155,11 @@ h4{
 
 .website__rights {
   font-size: 14px;
+}
+
+.wrapper{
+  padding: 30px 50px;
+  min-height: 100vh;
 }
 
 /* Reservation Styles */
