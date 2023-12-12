@@ -11,6 +11,7 @@
 <body>
     <nav class="navbar"> <!--Navigation bar-->
         <div class="navbar__container"> 
+            <img src="Eden's Bistro logo.png" alt="Eden's Bistro logo" id="navbarImage">
         <ul class="navbar__1"> 
             <li class="navbar__item"> 
                 <a href="Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
