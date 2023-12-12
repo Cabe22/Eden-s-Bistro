@@ -6,11 +6,26 @@ body {
   background-color: #f4f4f4;
 }
 
+p{
+  padding-top: 5px;
+}
+
+h4{
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.wrapper{
+  padding: 30px 50px;
+  min-height: 100vh;
+}
+
 /* Navigation bar styling */
 .navbar {
   background-color: #22B14C;
   color: white;
   overflow: hidden;
+  position: sticky;
 }
 
 #navbarTitle {
@@ -141,13 +156,9 @@ body {
   font-size: 14px;
 }
 
-.wrapper{
-  padding: 30px 50px;
-  min-height: 100vh;
-}
-
 /* Reservation Styles */
 .reservation{
+  text-align: center;
   padding: 40px 0;
   margin: 20px;
 }

@@ -32,33 +32,19 @@
 
     <!--Events Section-->
     <div class="reservation wrapper">
-    <h1>Employee Page</h1>
-    <h3>Add/Change Menu Items</h3>
-    <h3>Add Reservation</h3>
-    <h3>Add Event</h3>
-    <div class="form__container">
-        <form action="Login.php">
-            <button>Log Out</button>
-        </form>
-    </div>
-            <?php
-            // Database credentials
-            $dbhost = 'bpetcaugh35054.ipagemysql.com';
-            $dbname = 'bwilliams_db';
-            $dbuser = 'bwilliams';
-            $dbpassword = '9231773t25Ghj!';
-
-            // Connection
-            $conn = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
-    
-            // Check connection
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
-    
-            // Close the connection
-            $conn->close();
-            ?>
+        <div class="form__container">
+            <form action="databaseInserts/insertMenu.php">
+                <button>Add/Change Menu Items</button>
+            </form>
+            <form action="databaseInserts/insertReservation.php">
+                <button>Add Reservation</button>
+            </form>
+            <form action="databaseInserts/insertEvent.php">
+                <button>Add Event</button>
+            </form>
+            <form action="Login.php">
+                <button>Log Out</button>
+            </form>
         </div>
     </div>
 </body>
