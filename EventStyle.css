@@ -1,134 +1,149 @@
 /* General styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 /* Navigation bar styling */
 .navbar {
-    background-color: #22B14C;
-    color: white;
-    overflow: hidden;
+  background-color: #22B14C;
+  color: white;
+  overflow: hidden;
+}
+
+#navbarTitle {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 38px; 
+  font-weight: bold;
 }
 
 .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-
-  .navbar__1 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-
-.navbar__item {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.navbar__links {
-    color: #fff;
-    text-decoration: none;
-  }
+#navbarImage {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 50px; 
+  width: 50px; 
+}
+
+.navbar__1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar__item {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar__links, .navbar_links {
+  color: #fff;
+  text-decoration: none;
+}
 
 .navbar__item:hover {
-    background-color: #111;
+  background-color: #111;
 }
 
 /* Events section styling */
 .events {
-    /*padding: 20px;*/
-    text-align: center;
-    margin-top: 50px;
-    background-color: white;
+  text-align: center;
+  margin-top: 50px;
+  background-color: white;
 }
 
 .events h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .events h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #666;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #666;
 }
 
 .events p {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
+  font-size: 14px;
+  margin-bottom: 20px;
+}
 
 /* Footer section styling */
 .footer__container {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 .footer__links {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__links:hover {
-    color: #ddd;
+  color: #ddd;
 }
 
 .footer__link--wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .footer__link--items {
-    margin-bottom: 16px;
-  }
+.footer__link--items {
+  margin-bottom: 16px;
+}
 
-  .footer__link--items h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
+.footer__link--items h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
-  .footer__link--items a {
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 5px;
-  }
+.footer__link--items a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
 
-  .social__media {
-    margin-top: 20px;
-  }
+.social__media {
+  margin-top: 20px;
+}
 
-  .footer__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
-  .website__rights {
-    font-size: 14px;
-  }
+.website__rights {
+  font-size: 14px;
+}
 
-  
 .wrapper{
   padding: 30px 50px;
   min-height: 100vh;
-
 }
 
 // Reservation Styles
