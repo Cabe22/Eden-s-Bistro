@@ -64,8 +64,25 @@
             
             if ($result->num_rows > 0) {
                 // Output data for each row
+                $currentMonth = "";
                 while($row = $result->fetch_assoc()) {
-                    echo "<h2>" . $row["Date"]. "</h2>";
+                    if (strpos($row["Date"], 'Throughout') !== false) {
+                        $month = str_replace('Throughout ', '', $row["Date"]);
+                        $day = '';
+                    } else {
+                        $date = new DateTime($row["Date"]);
+                        $month = $date->format('F');
+                        $day = $date->format('j');
+                    }
+        
+                    if ($month != $currentMonth) {
+                        echo "<h2>" . $month . "</h2>";
+                        $currentMonth = $month;
+                    }
+                    
+                    if ($day != '') {
+                        echo "<h3>" . $day . "</h3>";
+                    }
                     echo "<p>" . $row["Event"]. "</p>";
                 }
             } else {
