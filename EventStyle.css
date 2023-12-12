@@ -146,13 +146,13 @@ body {
   min-height: 100vh;
 }
 
-// Reservation Styles
+/* Reservation Styles */
 .reservation{
   padding: 40px 0;
   margin: 20px;
 }
 
-// Login Styles
+/* Login Styles */
 form{
   width: 50%;
 }
