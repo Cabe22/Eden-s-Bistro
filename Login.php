@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="GE.js" async></script> 
-    <link rel="stylesheet" href="ReservationsStyle.css">
+    <link rel="stylesheet" href="Web.css">
     <title>Eden's Bistro - Events</title>
 </head>
-
 <body>
     <nav class="navbar"> <!--Navigation bar-->
         <div class="navbar__container"> 
@@ -29,14 +28,13 @@
                 <a href="Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
             </li>
         </div>
-    </nav> 
+    </nav>
 
-
-    <!--Reservations Section-->
-    <div class="reservation wrapper">
+    <!--Events Section-->
+    <div class="events">
         <h1>Reservations</h1>
         <h4>Here is a selection of reservable spaces we offer in our restaurant. If you would like to reserve or space or inquire about reserving, please call or email us!</h4>
-        <div>
+        <div class="events">
             <?php
             // Database credentials
             $dbhost = 'bpetcaugh35054.ipagemysql.com';
@@ -73,31 +71,29 @@
             $conn->close();
             ?>
         </div>
+        
     </div>
 
-</body>
-
-<!--Footer section-->
-<footer>
+    <!--Footer section-->
     <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items"> <!-- Bottom of the page-->
-                    <h2 class="footer__text">Contact Us</h2>
+                    <h2>Contact Us</h2>
                     <a href="/">1-800-212-1354</a>
                     <a href="/">EdensBistro@gmail.com</a>
                 </div>
                 <div class="social__media">
-                    <div class="social__media--wrap">
+                    <div class="social__meida--wrap">
                         <div class="footer__logo">
                             <a href="/" id ="footer__logo"><i class="GOOD EATS"></i></a>
                         </div>
-                        <p class="footer__text">Eden's Bistro 2023. All rights reserved</p>
+                        <p class="website__rights">Eden's Bistro 2023. All rights reserved</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</footer>
+</body>
 </html>
 
