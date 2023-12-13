@@ -36,7 +36,7 @@
     <div class="reservation wrapper">
         <div class="form__container">
             <form action="databaseInserts/insertMenu.php">
-                <button>Add/Change Menu Items</button>
+                <button>Add Menu Items</button>
             </form>
             <form action="databaseInserts/insertReservation.php">
                 <button>Add Reservation</button>

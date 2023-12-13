@@ -1,7 +1,11 @@
 <?php
     // Variables to store into reservations table
-    $reserveName = "";
-    $seats = 0;
+    $itemName = "";
+    $price = 0.0;
+    $itemType = "";
+    
+    // Signifies if an item is a side
+    $side = "";
 
     // Database Credentials
     $servername = 'bpetcaugh35054.ipagemysql.com';
@@ -10,10 +14,15 @@
     $dbname = 'bwilliams_db';
 
     // Checks responses and stores them to be sent to the database
-	if (isset($_POST['reserveName'])) 
-        $reserveName = $_POST['reserveName'];
-	if (isset($_POST['seats'])) 
-         $seats = $_POST['seats'];
+	if (isset($_POST['itemName'])) 
+        $itemName = $_POST['itemName'];
+	if (isset($_POST['price'])) 
+         $price = $_POST['price'];
+    if (isset($_POST['itemType']))
+        $itemType = $_POST['itemType'];
+    if(isset($_POST['side']))
+        $side = $_POST['side'];
+
 
     // Initialization of database connection
 	$status = "information";
@@ -27,20 +36,37 @@
         $status = "error";
 		$statusMessage = $link->connect_error;
 	} else {
-		if (strlen($reserveName)>0 && $status=="information") {
+		if (strlen($itemName)>0 && $status=="information") {
 			$status = "success";
-			$statusMessage = "New Reservation Space Added Successfully";
-			$q = "INSERT INTO reservations (reservationName,availableSeats) VALUES (?,?);";
-			$stmt = $link->prepare($q);
-			$stmt->bind_param('si',$p1,$p2);
-			$p1 = $reserveName;
-			$p2 = $seats;
-			if ($result = $stmt->execute()) {
-				$statusMessage .= "  Your user ID is {$link->insert_id}.";
-			} else {
-				$status = "error";
-				$statusMessage = "Your registration has failed.  Please try again later.<BR />".$link->error;
-			}		
+			$statusMessage = "New Menu Item Added Successfully";
+            $p1 = $itemName;
+            $p2 = $itemType;
+            $p3 = $price;
+            if($side == "Yes"){
+                $q = "INSERT INTO sides (item_name,side_type,side_price) VALUES (?,?,?);";
+                $stmt = $link->prepare($q);
+                $stmt->bind_param('ssd',$p1,$p2,$p3);
+            }elseif($itemType == "Breakfast"){
+                $q = "INSERT INTO breakfast (item_name,price) VALUES (?,?);";
+                $stmt = $link->prepare($q);
+                $stmt->bind_param('sd',$p1,$p3);
+            }elseif($itemType == "Lunch"){
+                $q = "INSERT INTO lunch (item_name,price) VALUES (?,?);";
+                $stmt = $link->prepare($q);
+                $stmt->bind_param('sd',$p1,$p3);
+            }elseif ($itemType == "Drinks"){
+                $q = "INSERT INTO drinks (item_name,price) VALUES (?,?);";
+                $stmt = $link->prepare($q);
+                $stmt->bind_param('sd',$p1,$p3);
+            }
+        if ($result = $stmt->execute()) {
+            $statusMessage .= "  Your user ID is {$link->insert_id}.";
+        }else {
+            $status = "error";
+            $statusMessage = "Your registration has failed.  Please try again later.<BR />".$link->error;
+       
+        }	
+	
 			$stmt->close();
 		}
 	}
@@ -79,13 +105,22 @@
     </nav> 
 
     <div class = "content">
-        <h1>New Reservation</h1>
+        <h1>New Menu Item</h1>
         <div class = "form__container">
-            <form action="insertReservation.php" method="post">
-                <label for="reserveName">Name of Reservation Space:</label>
-                <input type="text" id="reserveName" name="reserveName" <?php print "value=\"$reserveName\"";?> /><br />
-                <label for="seats">Number of Seats:</label>
-                <input type="number" id="seats" name="seats"  <?php print "value=\"$seats\"";?> /><br />
+            <form action="insertMenu.php" method="post">
+                <label for="itemName">Menu Item Name:</label>
+                <input type="text" id="itemName" name="itemName"/><br />
+                <label for="price">Price:</label>
+                <input type="number" step="0.01" id="price" name="price"/><br />
+                <label>Item Type:</label>
+                <select name = "itemType">
+                    <option value="Breakfast">Breakfast</option> 
+                    <option value="Lunch">Lunch</option> 
+                    <option value="Drinks">Drinks</option>
+                </select>
+                <br>
+                <label for="side"> Side Item? </label>
+                <input type="checkbox" id="side" name="side" value="Yes">
                 <input type="submit" value="Submit"/>
             </form>
             <form action="../employees.php">

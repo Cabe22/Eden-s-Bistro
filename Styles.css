@@ -187,10 +187,15 @@ button{
   padding: 0px;
   line-height: 25px;
 }
-input, button{
+input, button, label{
   display: grid;
   height: 30px;
-  margin: 20px 0;
+  margin: 15px 0;
+  width: 100%;
+}
+select{
+  height: 30px;
+  margin: 10px 0;
   width: 100%;
 }
 
