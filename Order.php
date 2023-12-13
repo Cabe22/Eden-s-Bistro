@@ -35,53 +35,55 @@
     <div class="Order content">
 
         <h2>Payment Information</h2>
-
-        <form action="" method="post">
-        <label for="cardType">Card Type:</label><br>
-        <input type="text" id="cardType" name="cardType"><br>
-        <label for="lastFour">Last Four Digits:</label><br>
-        <input type="text" id="lastFour" name="lastFour" maxlength="4"><br>
-        <label for="expiryDate">Expiry Date:</label><br>
-        <input type="date" id="expiryDate" name="expiryDate"><br>
-        <label for="cardHolderName">Card Holder Name:</label><br>
-        <input type="text" id="cardHolderName" name="cardHolderName"><br>
-        <input type="submit" name="submit" value="Submit">
-        </form> 
-
+        <div class="order-form-container">
+            <form action="" method="post">
+            <input type="text" id="cardType" name="cardType" placeholder="Card Type"><br>
+            <input type="text" id="lastFour" name="lastFour" maxlength="4" placeholder="Last Four Digits"><br>
+            <input type="date" id="expiryDate" name="expiryDate" placeholder="Expiry Date"><br>
+            <input type="text" id="cardHolderName" name="cardHolderName" placeholder="Card Holder Name"><br>
+            <input type="submit" name="submit" value="Submit">
+            </form> 
+        </div>
         <div class="Payment content">
-        <?php
-        if (isset($_POST['submit'])) {
-            $dbhost = 'bpetcaugh35054.ipagemysql.com';
-            $dbname = 'bwilliams_db';
-            $dbuser = 'bwilliams';
-            $dbpassword = '9231773t25Ghj!'; 
+            <?php
+            if (isset($_POST['submit'])) {
+                $dbhost = 'bpetcaugh35054.ipagemysql.com';
+                $dbname = 'bwilliams_db';
+                $dbuser = 'bwilliams';
+                $dbpassword = '9231773t25Ghj!'; 
 
-            // Create connection
-            $conn = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
+                // Create connection
+                $conn = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
 
-            // Check connection
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
+                // Check connection
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                }
+
+                $cardType = $_POST['cardType'];
+                $lastFour = $_POST['lastFour'];
+                $expiryDate = $_POST['expiryDate'];
+                $cardHolderName = $_POST['cardHolderName'];
+
+                $sql = "INSERT INTO CreditCardInfo (CardType, LastFourDigits, ExpiryDate, CardholderName)
+                VALUES ('$cardType', '$lastFour', '$expiryDate', '$cardHolderName')";
+
+                if ($conn->query($sql) === TRUE) {
+                    echo "New record created successfully";
+                } else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
+
+                $conn->close();
             }
+            ?>
 
-            $cardType = $_POST['cardType'];
-            $lastFour = $_POST['lastFour'];
-            $expiryDate = $_POST['expiryDate'];
-            $cardHolderName = $_POST['cardHolderName'];
+        </div>
 
-            $sql = "INSERT INTO CreditCardInfo (CardType, LastFourDigits, ExpiryDate, CardholderName)
-            VALUES ('$cardType', '$lastFour', '$expiryDate', '$cardHolderName')";
+    </div>    
 
-            if ($conn->query($sql) === TRUE) {
-                echo "New record created successfully";
-            } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
-
-            $conn->close();
-        }
-        ?>
 </body>
+
 <footer>
     <div class="footer__container">
         <div class="footer__links">

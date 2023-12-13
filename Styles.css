@@ -247,3 +247,60 @@ select{
     grid-template-columns: repeat(3, 5fr);
     grid-gap: 10px
 }
+
+/* Order form styling */
+.Order {
+  text-align: center;
+  margin: 50px auto;
+  background-color: #ffffff;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.Order h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #22B14C;
+}
+
+.Order input[type="text"], .Order input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.Order input[type="submit"] {
+  background-color: #22B14C;
+  color: white;
+  padding: 0px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 0px;
+  line-height: 25px;
+}
+
+.Order input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+form {
+  width: 50%; 
+  margin: auto; 
+}
+
+.order-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
