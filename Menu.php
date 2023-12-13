@@ -30,7 +30,7 @@
     <div class="content">
         <h1>Menu</h1>
         <h4>Find your favorite dish here!</h4>
-        <h1>Breakfast</h1>
+        <h1>Breakfast:</h1>
         <div>
             <?php
             // Database credentials
@@ -68,7 +68,7 @@
             $conn->close();
             ?>
         </div>
-        <h1>Lunch</h1>
+        <h1>Lunch:</h1>
         <div>
             <?php
             // Database credentials
@@ -106,7 +106,7 @@
             $conn->close();
             ?>
         </div>
-        <h1>Dinner</h1>
+        <h1>Dinner:</h1>
         <div>
             <?php
             // Database credentials
@@ -144,7 +144,7 @@
             $conn->close();
             ?>
         </div>
-        <h1>Sides</h1>
+        <h1>Sides:</h1>
         <div>
             <?php
             // Database credentials
@@ -183,7 +183,7 @@
             $conn->close();
             ?>
         </div>
-        <h1>Drinks</h1>
+        <h1>Drinks:</h1>
         <div>
             <?php
             // Database credentials
