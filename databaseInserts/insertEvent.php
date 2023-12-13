@@ -64,7 +64,7 @@
                 <a href="../Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
             </li>
             <li class="navbar__item">
-                <a href="../Menu.html" class="navbar__links">Menu</a> <!--Creates the menu button-->
+                <a href="../Menu.php" class="navbar__links">Menu</a> <!--Creates the menu button-->
             </li>
             <li class="navbar__item">
                 <a href="../Events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
