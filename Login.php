@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="GE.js" async></script> 
     <link rel="stylesheet" href="Styles.css">
-    <title>Eden's Bistro - Events</title>
+    <title>Eden's Bistro - Login</title>
 </head>
 <body>
     <nav class="navbar"> <!--Navigation bar-->
         <div class="navbar__container"> 
+            <img src="Eden's Bistro logo two.png" alt="Eden's Bistro logo" id="navbarImage">
+            <div id="navbarTitle">Eden's Bistro</div>
         <ul class="navbar__1"> 
             <li class="navbar__item"> 
                 <a href="Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
@@ -28,10 +30,10 @@
                 <a href="Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
             </li>
         </div>
-    </nav>
+    </nav> 
 
-    <!--Events Section-->
-    <div class="reservation wrapper">
+    <!--Login Section-->
+    <div class="content wrapper">
         <h1>Employee Log In</h1>
         <h4>Please enter your username and password</h4>
         <div>

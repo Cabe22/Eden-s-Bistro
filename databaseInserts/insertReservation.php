@@ -11,9 +11,9 @@
 
     // Checks responses and stores them to be sent to the database
 	if (isset($_POST['reserveName'])) 
-        $name = $_POST['reserveName'];
+        $reserveName = $_POST['reserveName'];
 	if (isset($_POST['seats'])) 
-         $ans1 = $_POST['seats'];
+         $seats = $_POST['seats'];
 
     // Initialization of database connection
 	$status = "information";
@@ -27,7 +27,7 @@
         $status = "error";
 		$statusMessage = $link->connect_error;
 	} else {
-		if (strlen($name)>0 && $status=="information") {
+		if (strlen($reserveName)>0 && $status=="information") {
 			$status = "success";
 			$statusMessage = "New Reservation Space Added Successfully";
 			$q = "INSERT INTO reservations (reservationName,availableSeats) VALUES (?,?);";
@@ -46,32 +46,77 @@
 	}
 ?>
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Survey Page
-        </title>
-        <meta charset="UTF-8"/>
-        <link rel='stylesheet' type='text/css' href='Styles.css'/>
-        <body>
-            <?php
-                print "<DIV class=\"$status\">$statusMessage</DIV>";
-                if ($status!="success") {
-            ?>
-            <h1>Welcome to the survey!</h1>
-            <h3>Rate each item from a scale of 1 - 5. 1 = Strongly dislike, 5 = Strongly like.</h3>
-            <div id="input">
-                <form id="registration" action="insertReservation.php" method="post">
-                    <label for="reserveName">Name of Reservation Space:</label>
-                    <input type="text" id="reserveName" name="reserveName" <?php print "value=\"$reserveName\"";?> /><br />
-                    <label for="seats">Number of Seats:</label>
-                    <input type="number" id="seats" name="seats"  <?php print "value=\"$seats\"";?> /><br />
-                    <input type="submit" value="Submit" />
-                </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='../Styles.css'/>
+    <title>Eden's Bistro</title>
+</head>
+<body>
+    <nav class="navbar"> <!--Navigation bar-->
+        <div class="navbar__container"> 
+            <img src="../Eden's Bistro logo two.png" alt="Eden's Bistro logo" id="navbarImage">
+            <div id="navbarTitle">Eden's Bistro</div>
+        <ul class="navbar__1"> 
+            <li class="navbar__item"> 
+                <a href="../Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
+            </li>
+            <li class="navbar__item">
+                <a href="../Menu.html" class="navbar__links">Menu</a> <!--Creates the menu button-->
+            </li>
+            <li class="navbar__item">
+                <a href="../Events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
+            </li>
+            <li class = "navbar__item">
+                <a href="../Reservations.php" class="navbar_links">Reservations</a> <!-- Creates the Reservations button-->
+            </li>
+            <li class = "navbar__item">
+                <a href="../Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
+            </li>
+        </div>
+    </nav> 
+
+    <div class = "content">
+        <h1>New Reservation</h1>
+        <div class = "form__container">
+            <form action="insertReservation.php" method="post">
+                <label for="reserveName">Name of Reservation Space:</label>
+                <input type="text" id="reserveName" name="reserveName" <?php print "value=\"$reserveName\"";?> /><br />
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" name="seats"  <?php print "value=\"$seats\"";?> /><br />
+                <input type="submit" value="Submit"/>
+            </form>
+            <form action="../employees.php">
+                <button>Go Back</button>
+            </form>
+        </div>
+    </div>
+    <?php 
+        if ($link instanceof mysqli) $link->close();
+    ?>
+</body>
+<footer>
+   <!--Footer section-->
+   <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items"> <!-- Bottom of the page-->
+                    <h2 class="footer__text">Contact Us</h2>
+                    <a href="/">1-800-212-1354</a>
+                    <a href="/">EdensBistro@gmail.com</a>
+                </div>
+                <div class="social__media">
+                    <div class="social__meida--wrap">
+                        <div class="footer__logo">
+                            <a href="/" id ="footer__logo"><i class="GOOD EATS"></i></a>
+                        </div>
+                        <p class="footer__text">Eden's Bistro 2023. All rights reserved</p>
+                    </div>
+                </div>
             </div>
-            <?php } 
-                if ($link instanceof mysqli) $link->close();
-            ?>
-        </body>
-    </head>
+        </div>
+    </div>
+</footer>
 </html>
