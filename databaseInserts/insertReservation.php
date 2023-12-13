@@ -52,7 +52,7 @@
             Survey Page
         </title>
         <meta charset="UTF-8"/>
-        <link rel='stylesheet' type='text/css' href='style.css'/>
+        <link rel='stylesheet' type='text/css' href='Styles.css'/>
         <body>
             <?php
                 print "<DIV class=\"$status\">$statusMessage</DIV>";
