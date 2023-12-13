@@ -12,6 +12,8 @@
 <body>
 <nav class="navbar"> <!--Navigation bar-->
         <div class="navbar__container"> 
+            <img src="Eden's Bistro logo two.png" alt="Eden's Bistro logo" id="navbarImage">
+            <div id="navbarTitle">Eden's Bistro</div>
         <ul class="navbar__1"> 
             <li class="navbar__item"> 
                 <a href="Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
@@ -29,11 +31,10 @@
                 <a href="Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
             </li>
         </div>
-    </nav> 
-
+</nav>
 
     <!--Reservations Section-->
-    <div class="reservation wrapper">
+    <div class="content">
         <h1>Reservations</h1>
         <h4>Here is a selection of reservable spaces we offer in our restaurant. If you would like to reserve or space or inquire about reserving, please call or email us!</h4>
         <div>
@@ -74,6 +75,7 @@
             ?>
         </div>
     </div>
+
     <!--Footer section-->
     <div class="footer__container">
         <div class="footer__links">

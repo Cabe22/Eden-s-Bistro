@@ -33,9 +33,9 @@
     </nav> 
 
     <!--Events Section-->
-    <div class="events">
+    <div class="content">
         <h1>Upcoming Events at Eden's Bistro</h1>
-        <div class="events">
+        <div class="content">
             <?php
             // Database credentials
             ini_set('display_errors', 1);
