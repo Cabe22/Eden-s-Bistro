@@ -58,7 +58,7 @@
                 // Output data for each row
                 while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
                     echo "<h2>" . $row["item_name"]. "</h2>";
-                    echo "<p>$: " . $row["price"]. "</p>";
+                    echo "<p>$" . $row["price"]. "</p>";
                 }
             } else {
                 echo "Sold out";
@@ -96,7 +96,7 @@
                 // Output data for each row
                 while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
                     echo "<h2>" . $row["item_name"]. "</h2>";
-                    echo "<p>$: " . $row["price"]. "</p>";
+                    echo "<p>$" . $row["price"]. "</p>";
                 }
             } else {
                 echo "Sold out";
@@ -134,7 +134,7 @@
                 // Output data for each row
                 while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
                     echo "<h2>" . $row["item_name"]. "</h2>";
-                    echo "<p>$: " . $row["price"]. "</p>";
+                    echo "<p>$" . $row["price"]. "</p>";
                 }
             } else {
                 echo "Sold out";
@@ -173,7 +173,7 @@
                 while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
                     echo "<h2>" . $row["item_name"]. "</h2>";
                     echo "<h2>" . $row["side_type"]. "</h2>";
-                    echo "<p>$: " . $row["side_price"]. "</p>";
+                    echo "<p>$" . $row["side_price"]. "</p>";
                 }
             } else {
                 echo "Sold out";
@@ -211,7 +211,7 @@
                 // Output data for each row
                 while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
                     echo "<h2>" . $row["item_name"]. "</h2>";
-                    echo "<p>$: " . $row["price"]. "</p>";
+                    echo "<p>$" . $row["price"]. "</p>";
                 }
             } else {
                 echo "Sold out";
@@ -255,6 +255,8 @@
 <script src="WE.js"></script> <!--Connects to the JavaScript code-->
 </body>
 </html>
+
+
 
 
 
