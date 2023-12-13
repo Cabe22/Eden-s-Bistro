@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="GE.js" async></script> 
     <link rel="stylesheet" href="Styles.css">
-    <title>Eden's Bistro - Events</title>
+    <title>Eden's Bistro - Order</title>
 </head>
 <body>
     <nav class="navbar"> <!--Navigation bar-->
@@ -32,33 +32,11 @@
             </li>
         </div>
     </nav> 
-
-    <!--Events Section-->
-    <div class="reservation wrapper">
-        <div class="form__container">
-            <form action="databaseInserts/insertMenu.php">
-                <button>Add Menu Items</button>
-            </form>
-            <form action="databaseInserts/insertReservation.php">
-                <button>Add Reservation</button>
-            </form>
-            <form action="databaseInserts/insertEvent.php">
-                <button>Add Event</button>
-            </form>
-            <form action="Login.php">
-                <button>Log Out</button>
-            </form>
-        </div>
-    </div>
-</body>
-
-<footer>
-   <!--Footer section-->
-   <div class="footer__container">
+    <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items"> <!-- Bottom of the page-->
-                    <h2 class="footer__text">Contact Us</h2>
+                    <h2>Contact Us</h2>
                     <a href="/">1-800-212-1354</a>
                     <a href="/">EdensBistro@gmail.com</a>
                 </div>
@@ -67,12 +45,11 @@
                         <div class="footer__logo">
                             <a href="/" id ="footer__logo"><i class="GOOD EATS"></i></a>
                         </div>
-                        <p class="footer__text">Eden's Bistro 2023. All rights reserved</p>
+                        <p class="website__rights">Eden's Bistro 2023. All rights reserved</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</footer>
+</body>
 </html>
-

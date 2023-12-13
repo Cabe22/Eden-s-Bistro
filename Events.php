@@ -12,6 +12,7 @@
     <nav class="navbar"> <!--Navigation bar-->
         <div class="navbar__container"> 
             <img src="Eden's Bistro logo two.png" alt="Eden's Bistro logo" id="navbarImage">
+            <a href="Order.php" class="navbar__item order-link">Order Now</a>
             <div id="navbarTitle">Eden's Bistro</div>
         <ul class="navbar__1"> 
             <li class="navbar__item"> 
@@ -29,6 +30,11 @@
             <li class = "navbar__item">
                 <a href="Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
             </li>
+            <!--
+            <li class="navbar__item">
+                <a href="Order.php" class="navbar_links">Order Now</a> 
+            </li>
+-->
         </div>
     </nav> 
 
