@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar"> <!--Navigation bar-->
         <div class="navbar__container"> 
-            <img src="Eden's Bistro logo.png" alt="Eden's Bistro logo" id="navbarImage">
+            <img src="Eden's Bistro logo two.png" alt="Eden's Bistro logo" id="navbarImage">
             <div id="navbarTitle">Eden's Bistro</div>
         <ul class="navbar__1"> 
             <li class="navbar__item"> 
