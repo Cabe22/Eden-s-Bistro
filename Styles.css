@@ -67,6 +67,22 @@ body {
   background-color: #e0e0e0;
 }
 
+.order-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  right: 70px;
+}
+
+.order-link:hover {
+  background-color: #e0e0e0;
+}
+
 /* Events section styling */
 .content {
   text-align: center;
