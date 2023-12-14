@@ -90,9 +90,9 @@
         <div class = "form__container">
             <form action="insertEvent.php" method="post">
                 <label for="eventDate">Event Date (ex. January 3):</label>
-                <input type="text" id="eventDate" name="eventDate" <?php print "value=\"$eventDate\"";?> /><br />
+                <input type="text" id="eventDate" name="eventDate"/><br />
                 <label for="eventName">Name of Event:</label>
-                <input type="text" id="eventName" name="eventName"  <?php print "value=\"$eventName\"";?> /><br />
+                <input type="text" id="eventName" name="eventName"/><br />
                 <input type="submit" value="Submit"/>
             </form>
             <form action="../employees.php">

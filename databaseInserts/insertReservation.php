@@ -89,9 +89,9 @@
         <div class = "form__container">
             <form action="insertReservation.php" method="post">
                 <label for="reserveName">Name of Reservation Space:</label>
-                <input type="text" id="reserveName" name="reserveName" <?php print "value=\"$reserveName\"";?> /><br />
+                <input type="text" id="reserveName" name="reserveName"/><br />
                 <label for="seats">Number of Seats:</label>
-                <input type="number" id="seats" name="seats"  <?php print "value=\"$seats\"";?> /><br />
+                <input type="number" id="seats" name="seats" /><br />
                 <input type="submit" value="Submit"/>
             </form>
             <form action="../employees.php">
