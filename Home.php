@@ -77,8 +77,8 @@
                 // Output data for each row
                 while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
                     echo "<h2>" . $row["day_name"]. "</h2>";
-                    echo "<p>AM" . $row["OPEN_time"]. "</p>";
-                    echo "<p>PM" . $row["CLOSE_time"]. "</p>";
+                    echo "<p>Open: " . $row["OPEN_time"]. "AM</p>";
+                    echo "<p>Close: " . $row["CLOSE_time"]. "PM</p>";
                 }
             } else {
                 echo "Closed";
