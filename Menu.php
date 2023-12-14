@@ -67,7 +67,7 @@
             
             if ($result->num_rows > 0) {
                 // Output data for each row
-                while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
+                while($row = $result->fetch_assoc()) { // Shows the breakfast items and price
                     echo "<h2>" . $row["item_name"]. "</h2>";
                     echo "<p>$" . $row["price"]. "</p>";
                 }
@@ -105,7 +105,7 @@
             
             if ($result->num_rows > 0) {
                 // Output data for each row
-                while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
+                while($row = $result->fetch_assoc()) { // shows the lunch item and price
                     echo "<h2>" . $row["item_name"]. "</h2>";
                     echo "<p>$" . $row["price"]. "</p>";
                 }
@@ -143,7 +143,7 @@
             
             if ($result->num_rows > 0) {
                 // Output data for each row
-                while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
+                while($row = $result->fetch_assoc()) { // shows the dinner item and price
                     echo "<h2>" . $row["item_name"]. "</h2>";
                     echo "<p>$" . $row["price"]. "</p>";
                 }
@@ -181,7 +181,7 @@
             
             if ($result->num_rows > 0) {
                 // Output data for each row
-                while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
+                while($row = $result->fetch_assoc()) { // shows the side item and price
                     echo "<h2>" . $row["item_name"]. "</h2>";
                     echo "<h2>" . $row["side_type"]. "</h2>";
                     echo "<p>$" . $row["side_price"]. "</p>";
@@ -220,7 +220,7 @@
             
             if ($result->num_rows > 0) {
                 // Output data for each row
-                while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
+                while($row = $result->fetch_assoc()) { // shows the drink item and price
                     echo "<h2>" . $row["item_name"]. "</h2>";
                     echo "<p>$" . $row["price"]. "</p>";
                 }
@@ -252,6 +252,7 @@
         <h2>Contact Us</h2>
         <a href="/">1-800-212-1354</a>
         <a href="/">EdenBistro@gmail.com</a>
+        <a href="/">250 Manor Avenue, Langhorne, PA</a>
 </div>
 <div class="social__media">
     <div class="social__meida--wrap">
