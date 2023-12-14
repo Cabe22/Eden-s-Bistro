@@ -79,12 +79,12 @@
                 <!--
                 <li class="navbar__item">
                     <a href="../Order.php" class="navbar_links">Order Now</a> 
-                </li>
-    -->
+                </li>-->
             </div>
-        </nav> 
+    </nav> 
 
-    <div class = "content">
+        <!-- Create a Reservation -->
+        <div class = "content">
         <h1>New Reservation</h1>
         <div class = "form__container">
             <form action="insertReservation.php" method="post">
@@ -104,21 +104,22 @@
     ?>
 </body>
 <footer>
-   <!--Footer section-->
-   <div class="footer__container">
+    <!--Footer section-->
+    <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items"> <!-- Bottom of the page-->
-                    <h2 class="footer__text">Contact Us</h2>
-                    <a href="/">1-800-212-1354</a>
-                    <a href="/">EdensBistro@gmail.com</a>
+                    <h2>Contact Us</h2>
+                    <a href="/">1-800-212-1354</a><br>
+                    <a href="/">EdensBistro@gmail.com</a><br>
+                    <a href="/">250 Manor Avenue, Langhorne, PA</a>
                 </div>
                 <div class="social__media">
                     <div class="social__meida--wrap">
                         <div class="footer__logo">
                             <a href="/" id ="footer__logo"><i class="GOOD EATS"></i></a>
                         </div>
-                        <p class="footer__text">Eden's Bistro 2023. All rights reserved</p>
+                        <p class="website__rights">Eden's Bistro 2023. All rights reserved</p>
                     </div>
                 </div>
             </div>

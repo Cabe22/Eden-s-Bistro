@@ -244,26 +244,27 @@
 </div>
 </div>
 </div>
-<!--Footer section-->
-<div class="footer__container">
-<div class="footer__links">
-<div class="footer__link--wrapper">
-    <div class="footer__link--items">
-        <h2>Contact Us</h2>
-        <a href="/">1-800-212-1354 ,</a>
-        <a href="/">EdenBistro@gmail.com ,</a>
-        <a href="/">250 Manor Avenue, Langhorne, PA</a>
-</div>
-<div class="social__media">
-    <div class="social__meida--wrap">
-        <div class="footer__logo">
-            <a href="/" id ="footer__logo"><i class="Eden's Bistro"></i></a>
+    <!--Footer section-->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items"> <!-- Bottom of the page-->
+                    <h2>Contact Us</h2>
+                    <a href="/">1-800-212-1354</a><br>
+                    <a href="/">EdensBistro@gmail.com</a><br>
+                    <a href="/">250 Manor Avenue, Langhorne, PA</a>
+                </div>
+                <div class="social__media">
+                    <div class="social__meida--wrap">
+                        <div class="footer__logo">
+                            <a href="/" id ="footer__logo"><i class="GOOD EATS"></i></a>
+                        </div>
+                        <p class="website__rights">Eden's Bistro 2023. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="website__rights">Eden's Bistro 2023. All rights reserved</p>
     </div>
-</div>
-</div>
-</div>
 <script src="WE.js"></script> <!--Connects to the JavaScript code-->
 </body>
 </html>

@@ -85,13 +85,15 @@
 </body>
 
 <footer>
+    <!--Footer section-->
     <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items"> <!-- Bottom of the page-->
                     <h2>Contact Us</h2>
-                    <a href="/">1-800-212-1354</a>
-                    <a href="/">EdensBistro@gmail.com</a>
+                    <a href="/">1-800-212-1354</a><br>
+                    <a href="/">EdensBistro@gmail.com</a><br>
+                    <a href="/">250 Manor Avenue, Langhorne, PA</a>
                 </div>
                 <div class="social__media">
                     <div class="social__meida--wrap">

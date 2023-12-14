@@ -34,10 +34,9 @@
             <!--
             <li class="navbar__item">
                 <a href="Order.php" class="navbar_links">Order Now</a> 
-            </li>
--->
+            </li>-->
         </div>
-    </nav> 
+</nav> 
 
     <!--Reservations Section-->
     <div class="content">
@@ -90,9 +89,9 @@
             <div class="footer__link--wrapper">
                 <div class="footer__link--items"> <!-- Bottom of the page-->
                     <h2>Contact Us</h2>
-                     <a href="/">1-800-212-1354 ,</a>
-        <a href="/">EdenBistro@gmail.com ,</a>
-        <a href="/">250 Manor Avenue, Langhorne, PA</a>
+                    <a href="/">1-800-212-1354</a><br>
+                    <a href="/">EdensBistro@gmail.com</a><br>
+                    <a href="/">250 Manor Avenue, Langhorne, PA</a>
                 </div>
                 <div class="social__media">
                     <div class="social__meida--wrap">

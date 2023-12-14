@@ -114,6 +114,7 @@
             </div>
         </nav> 
 
+    <!-- Create a Menu Item -->
     <div class = "content">
         <h1>New Menu Item</h1>
         <div class = "form__container">
@@ -123,6 +124,7 @@
                 <label for="price">Price:</label>
                 <input type="number" step="0.01" id="price" name="price"/><br />
                 <label>Item Type:</label>
+                <!-- Dropdown menu to select what type the item is-->
                 <select name = "itemType">
                     <option value="Breakfast">Breakfast</option>
                     <option value="Lunch">Lunch</option> 
@@ -130,6 +132,7 @@
                     <option value="Drinks">Drinks</option>
                 </select>
                 <br>
+                <!-- Checkbox to mark an item as a side -->
                 <label for="side"> Side Item? </label>
                 <input type="checkbox" id="side" name="side" value="Yes">
                 <input type="submit" value="Submit"/>
@@ -144,8 +147,27 @@
     ?>
 </body>
 <footer>
-   <!--Footer section-->
-   <div class="footer__container">
+    <!--Footer section-->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items"> <!-- Bottom of the page-->
+                    <h2>Contact Us</h2>
+                    <a href="/">1-800-212-1354</a><br>
+                    <a href="/">EdensBistro@gmail.com</a><br>
+                    <a href="/">250 Manor Avenue, Langhorne, PA</a>
+                </div>
+                <div class="social__media">
+                    <div class="social__meida--wrap">
+                        <div class="footer__logo">
+                            <a href="/" id ="footer__logo"><i class="GOOD EATS"></i></a>
+                        </div>
+                        <p class="website__rights">Eden's Bistro 2023. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items"> <!-- Bottom of the page-->

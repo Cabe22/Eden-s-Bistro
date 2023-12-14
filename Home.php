@@ -36,86 +36,78 @@
             </li>
 -->
         </div>
-    </nav> 
-
-<!--Hero Section-->
-<div class="content">
+    </nav>
+  
+    <!--  Restaurant Hours -->
+    <div class="content">
         <h1>Eden's Bistro</h1>
-        <h2>Restaurant</h2>
-        <div class="main_image--container">
-        </div>
-        </div>
-    </div>
-</div>
-            
-<div class="content">
-        <h1>Hours:</h1>
-        <div>
-            <?php
-            // Database credentials
-            $dbhost = 'bpetcaugh35054.ipagemysql.com';
-            $dbname = 'bwilliams_db';
-            $dbuser = 'bwilliams';
-            $dbpassword = '9231773t25Ghj!';
-    
-            //  connection
-            $conn = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
-    
-            // Check connection
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
-    
-            
-            $sql = "SELECT * FROM hours";
-    
-            
-            $result = $conn->query($sql);
-    
-            
-            if ($result->num_rows > 0) {
-                // Output data for each row
-                while($row = $result->fetch_assoc()) { // shows the days and hours
-                    echo "<h2>" . $row["day_name"]. "</h2>";
-                    echo "<p>Open: " . $row["OPEN_time"]. "AM</p>";
-                    echo "<p>Close: " . $row["CLOSE_time"]. "PM</p>";
+        <h3>Restaurant Hours:</h3>
+            <div>
+                <?php
+                // Database credentials
+                $dbhost = 'bpetcaugh35054.ipagemysql.com';
+                $dbname = 'bwilliams_db';
+                $dbuser = 'bwilliams';
+                $dbpassword = '9231773t25Ghj!';
+        
+                //  connection
+                $conn = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
+        
+                // Check connection
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
                 }
-            } else {
-                echo "Closed";
-            }
-            // Close the connection
-            $conn->close();
-            ?>
-        </div>
-<!-- Service Section-->
-<div class="content">
-<h3>Only the best</h3>
-    <div class="services__container">
-        <div class="services__card">
+        
+                
+                $sql = "SELECT * FROM hours";
+        
+                
+                $result = $conn->query($sql);
+        
+                
+                if ($result->num_rows > 0) {
+                    // Output data for each row
+                    while($row = $result->fetch_assoc()) { // shows the days and hours
+                        echo "<h2>" . $row["day_name"]. "</h2>";
+                        echo "<p>Open: " . $row["OPEN_time"]. "AM</p>";
+                        echo "<p>Close: " . $row["CLOSE_time"]. "PM</p>";
+                    }
+                } else {
+                    echo "Closed";
+                }
+                // Close the connection
+                $conn->close();
+                ?>
+    </div>
+    <!-- Service Section-->
+    <div class="content">
+        <h3>Only the best</h3>
+        <div class="services__container">
+            <div class="services__card">
+            </div>
         </div>
     </div>
-</div>
 
-<!--Footer section-->
-<div class="footer__container">
-    <div class="footer__links">
-        <div class="footer__link--wrapper">
-            <div class="footer__link--items"> <!-- Bottom of the page-->
-                <h2>Contact Us</h2>
-               <a href="/">1-800-212-1354 ,</a>
-        <a href="/">EdenBistro@gmail.com ,</a>
-        <a href="/">250 Manor Avenue, Langhorne, PA</a>
-            </div>
-            <div class="social__media">
-                <div class="social__meida--wrap">
-                    <div class="footer__logo">
-                        <a href="/" id ="footer__logo"><i class="GOOD EATS"></i></a>
+    <!--Footer section-->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items"> <!-- Bottom of the page-->
+                    <h2>Contact Us</h2>
+                    <a href="/">1-800-212-1354</a><br>
+                    <a href="/">EdensBistro@gmail.com</a><br>
+                    <a href="/">250 Manor Avenue, Langhorne, PA</a>
+                </div>
+                <div class="social__media">
+                    <div class="social__meida--wrap">
+                        <div class="footer__logo">
+                            <a href="/" id ="footer__logo"><i class="GOOD EATS"></i></a>
+                        </div>
+                        <p class="website__rights">Eden's Bistro 2023. All rights reserved</p>
                     </div>
-                    <p class="website__rights">Eden's Bistro 2023. All rights reserved</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>

@@ -84,13 +84,13 @@
             </div>
         </nav> 
 
+    <!-- Create an Event -->
     <div class = "content">
         <h1>New Event</h1>
         <div class = "form__container">
             <form action="insertEvent.php" method="post">
                 <label for="eventDate">Event Date (ex. January 3):</label>
                 <input type="text" id="eventDate" name="eventDate" <?php print "value=\"$eventDate\"";?> /><br />
-
                 <label for="eventName">Name of Event:</label>
                 <input type="text" id="eventName" name="eventName"  <?php print "value=\"$eventName\"";?> /><br />
                 <input type="submit" value="Submit"/>
@@ -105,21 +105,22 @@
     ?>
 </body>
 <footer>
-   <!--Footer section-->
-   <div class="footer__container">
+    <!--Footer section-->
+    <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items"> <!-- Bottom of the page-->
-                    <h2 class="footer__text">Contact Us</h2>
-                    <a href="/">1-800-212-1354</a>
-                    <a href="/">EdensBistro@gmail.com</a>
+                    <h2>Contact Us</h2>
+                    <a href="/">1-800-212-1354</a><br>
+                    <a href="/">EdensBistro@gmail.com</a><br>
+                    <a href="/">250 Manor Avenue, Langhorne, PA</a>
                 </div>
                 <div class="social__media">
                     <div class="social__meida--wrap">
                         <div class="footer__logo">
                             <a href="/" id ="footer__logo"><i class="GOOD EATS"></i></a>
                         </div>
-                        <p class="footer__text">Eden's Bistro 2023. All rights reserved</p>
+                        <p class="website__rights">Eden's Bistro 2023. All rights reserved</p>
                     </div>
                 </div>
             </div>
