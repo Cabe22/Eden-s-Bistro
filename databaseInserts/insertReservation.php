@@ -56,27 +56,33 @@
 </head>
 <body>
     <nav class="navbar"> <!--Navigation bar-->
-        <div class="navbar__container"> 
-            <img src="../Eden's Bistro logo two.png" alt="Eden's Bistro logo" id="navbarImage">
-            <div id="navbarTitle">Eden's Bistro</div>
-        <ul class="navbar__1"> 
-            <li class="navbar__item"> 
-                <a href="../Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
-            </li>
-            <li class="navbar__item">
-                <a href="../Menu.php" class="navbar__links">Menu</a> <!--Creates the menu button-->
-            </li>
-            <li class="navbar__item">
-                <a href="../Events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
-            </li>
-            <li class = "navbar__item">
-                <a href="../Reservations.php" class="navbar_links">Reservations</a> <!-- Creates the Reservations button-->
-            </li>
-            <li class = "navbar__item">
-                <a href="../Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
-            </li>
-        </div>
-    </nav> 
+            <div class="navbar__container"> 
+                <img src="../Eden's Bistro logo two.png" alt="Eden's Bistro logo" id="navbarImage">
+                <a href="Order.php" class="navbar__item order-link">Payment</a>
+                <div id="navbarTitle">Eden's Bistro</div>
+            <ul class="navbar__1"> 
+                <li class="navbar__item"> 
+                    <a href="../Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
+                </li>
+                <li class="navbar__item">
+                    <a href="../Menu.php" class="navbar__links">Menu</a> <!--Creates the menu button-->
+                </li>
+                <li class="navbar__item">
+                    <a href="../Events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
+                </li>
+                <li class = "navbar__item">
+                    <a href="../Reservations.php" class="navbar_links">Reservations</a> <!-- Creates the Reservations button-->
+                </li>
+                <li class = "navbar__item">
+                    <a href="../Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
+                </li>
+                <!--
+                <li class="navbar__item">
+                    <a href="../Order.php" class="navbar_links">Order Now</a> 
+                </li>
+    -->
+            </div>
+        </nav> 
 
     <div class = "content">
         <h1>New Reservation</h1>

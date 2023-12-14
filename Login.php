@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="Styles.css">
     <title>Eden's Bistro - Login</title>
 </head>
-<body>
-    <nav class="navbar"> <!--Navigation bar-->
+<nav class="navbar"> <!--Navigation bar-->
         <div class="navbar__container"> 
             <img src="Eden's Bistro logo two.png" alt="Eden's Bistro logo" id="navbarImage">
             <a href="Order.php" class="navbar__item order-link">Payment</a>
@@ -30,9 +29,13 @@
             <li class = "navbar__item">
                 <a href="Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
             </li>
+            <!--
+            <li class="navbar__item">
+                <a href="Order.php" class="navbar_links">Order Now</a> 
+            </li>
+-->
         </div>
     </nav> 
-
     <!--Login Section-->
     <div class="content wrapper">
         <h1>Employee Log In</h1>

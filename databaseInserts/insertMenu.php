@@ -54,6 +54,10 @@
                 $q = "INSERT INTO lunch (item_name,price) VALUES (?,?);";
                 $stmt = $link->prepare($q);
                 $stmt->bind_param('sd',$p1,$p3);
+            }elseif ($itemType == "Dinner"){
+                $q = "INSERT INTO dinner (item_name,price) VALUES (?,?);";
+                $stmt = $link->prepare($q);
+                $stmt->bind_param('sd',$p1,$p3);
             }elseif ($itemType == "Drinks"){
                 $q = "INSERT INTO drinks (item_name,price) VALUES (?,?);";
                 $stmt = $link->prepare($q);
@@ -81,28 +85,34 @@
     <title>Eden's Bistro</title>
 </head>
 <body>
-    <nav class="navbar"> <!--Navigation bar-->
-        <div class="navbar__container"> 
-            <img src="../Eden's Bistro logo two.png" alt="Eden's Bistro logo" id="navbarImage">
-            <div id="navbarTitle">Eden's Bistro</div>
-        <ul class="navbar__1"> 
-            <li class="navbar__item"> 
-                <a href="../Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
-            </li>
-            <li class="navbar__item">
-                <a href="../Menu.php" class="navbar__links">Menu</a> <!--Creates the menu button-->
-            </li>
-            <li class="navbar__item">
-                <a href="../Events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
-            </li>
-            <li class = "navbar__item">
-                <a href="../Reservations.php" class="navbar_links">Reservations</a> <!-- Creates the Reservations button-->
-            </li>
-            <li class = "navbar__item">
-                <a href="../Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
-            </li>
-        </div>
-    </nav> 
+        <nav class="navbar"> <!--Navigation bar-->
+            <div class="navbar__container"> 
+                <img src="../Eden's Bistro logo two.png" alt="Eden's Bistro logo" id="navbarImage">
+                <a href="Order.php" class="navbar__item order-link">Payment</a>
+                <div id="navbarTitle">Eden's Bistro</div>
+            <ul class="navbar__1"> 
+                <li class="navbar__item"> 
+                    <a href="../Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
+                </li>
+                <li class="navbar__item">
+                    <a href="../Menu.php" class="navbar__links">Menu</a> <!--Creates the menu button-->
+                </li>
+                <li class="navbar__item">
+                    <a href="../Events.php" class= "navbar_links">Events</a> <!-- Creates the Events button-->
+                </li>
+                <li class = "navbar__item">
+                    <a href="../Reservations.php" class="navbar_links">Reservations</a> <!-- Creates the Reservations button-->
+                </li>
+                <li class = "navbar__item">
+                    <a href="../Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
+                </li>
+                <!--
+                <li class="navbar__item">
+                    <a href="../Order.php" class="navbar_links">Order Now</a> 
+                </li>
+    -->
+            </div>
+        </nav> 
 
     <div class = "content">
         <h1>New Menu Item</h1>
@@ -114,8 +124,9 @@
                 <input type="number" step="0.01" id="price" name="price"/><br />
                 <label>Item Type:</label>
                 <select name = "itemType">
-                    <option value="Breakfast">Breakfast</option> 
+                    <option value="Breakfast">Breakfast</option>
                     <option value="Lunch">Lunch</option> 
+                    <option value="Dinner">Dinner</option>
                     <option value="Drinks">Drinks</option>
                 </select>
                 <br>

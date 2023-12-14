@@ -31,13 +31,20 @@
             <li class = "navbar__item">
                 <a href="Login.php" class="navbar_links">Log In</a> <!-- Creates the Reservations button-->
             </li>
+            <!--
+            <li class="navbar__item">
+                <a href="Order.php" class="navbar_links">Order Now</a> 
+            </li>
+-->
         </div>
-</nav>
+    </nav> 
 
     <!--Reservations Section-->
     <div class="content">
         <h1>Reservations</h1>
-        <h4>Here is a selection of reservable spaces we offer in our restaurant. If you would like to reserve or space or inquire about reserving, please call or email us!</h4>
+        <h4>Here is a selection of reservable spaces we offer in our restaurant. If you would like to reserve or space or inquire about reserving, please call or email us at
+                    <a href="/">1-800-212-1354</a> or
+                    <a href="/">EdensBistro@gmail.com</a></h4>
         <div>
             <?php
             // Database credentials
