@@ -47,7 +47,46 @@
         </div>
     </div>
 </div>
-
+            
+<div class="content">
+        <h1>Hours:</h1>
+        <div>
+            <?php
+            // Database credentials
+            $dbhost = 'bpetcaugh35054.ipagemysql.com';
+            $dbname = 'bwilliams_db';
+            $dbuser = 'bwilliams';
+            $dbpassword = '9231773t25Ghj!';
+    
+            //  connection
+            $conn = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
+    
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+    
+            
+            $sql = "SELECT * FROM hours";
+    
+            
+            $result = $conn->query($sql);
+    
+            
+            if ($result->num_rows > 0) {
+                // Output data for each row
+                while($row = $result->fetch_assoc()) { // Displays each reservation name and number of seats
+                    echo "<h2>" . $row["day_name"]. "</h2>";
+                    echo "<p>AM" . $row["OPEN_time"]. "</p>";
+                    echo "<p>PM" . $row["CLOSE_time"]. "</p>";
+                }
+            } else {
+                echo "Closed";
+            }
+            // Close the connection
+            $conn->close();
+            ?>
+        </div>
 <!-- Service Section-->
 <div class="content">
 <h3>Only the best</h3>
