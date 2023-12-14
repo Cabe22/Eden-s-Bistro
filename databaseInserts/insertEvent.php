@@ -62,7 +62,7 @@
                 <div id="navbarTitle">Eden's Bistro</div>
             <ul class="navbar__1"> 
                 <li class="navbar__item"> 
-                    <a href="../Home.html" class="navbar__links">Home</a> <!--Creates the Home button-->
+                    <a href="../Home.php" class="navbar__links">Home</a> <!--Creates the Home button-->
                 </li>
                 <li class="navbar__item">
                     <a href="../Menu.php" class="navbar__links">Menu</a> <!--Creates the menu button-->
