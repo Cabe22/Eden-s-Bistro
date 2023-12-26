@@ -1,4 +1,5 @@
 # Eden's Bistro (CIS 431 Web Applications Final Project)
+Link to the Website: http://cairncs.tech/bwilliams/edensBistro/Events.php
 
 ## Team Members:
 - Tehron Phillips
